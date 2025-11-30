@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 95%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>anki</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+
+<body style="height:  95%;display:flex;flex-direction:column;">
+    <header>
+	    <nav  style="display:flex;gap:4px;justify-content:space-between;width:100%">
+	    <a href="/">⌂ How to build the best learning tool possible?</a>
+	    <a href="https://koljasam.com/" target="_blank">by Kolja Sam</a>
+	    </nav>
+	    <hr />
+    </header>
+    <main style="flex:1">
+        <h1>anki</h1>
+        <pre class="frontmatter language-yaml" style="display: none;"><code class="language-yaml is-loaded"><span class="token key atrule">zk-id</span><span class="token punctuation">:</span> <span class="token string">"1.0"</span></code><button class="copy-code-button"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon lucide-copy"><rect x="8" y="8" width="14" height="14" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg></button></pre>
+<p dir="auto">←<a class="internal-link" data-href="learning-tool.html" href="learning-tool.html" rel="nofollow">learning tool</a> | <a class="internal-link" data-href="memorizationcafe.html" href="memorizationcafe.html" rel="nofollow">memorization.cafe</a>→</p>
+    </main>
+    <footer>
+	    <form onsubmit="event.preventDefault(); go()" style="display:flex;gap:4px">
+			  <input id="q" type="text" autofocus />
+			  <button type="Submit">Search</button>
+		</form>
+    </footer>
+</body>
+<script>
+  function go() {
+    const q = encodeURIComponent(document.getElementById("q").value);
+    const site = encodeURIComponent(location.hostname);
+    const url = "https://www.duckduckgo.com/search?q=site:" + site + "+" + q;
+    window.open(url, "_blank");
+  }
+</script>
+</html>
