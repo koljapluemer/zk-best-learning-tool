@@ -25,19 +25,5 @@
 </ul>
 <p dir="auto">←<a class="internal-link" data-href="the-wooden.html" href="the-wooden.html" rel="nofollow">the Wooden</a> | <a class="internal-link" data-href="learning-method.html" href="learning-method.html" rel="nofollow">learning method</a>→</p>
     </main>
-    <footer>
-	    <form onsubmit="event.preventDefault(); go()" style="display:flex;gap:4px">
-			  <input id="q" type="text" autofocus />
-			  <button type="Submit">Search (WIP)</button>
-		</form>
-    </footer>
 </body>
-<script>
-  function go() {
-    const q = encodeURIComponent(document.getElementById("q").value);
-    const site = encodeURIComponent(location.hostname);
-    const url = "https://www.duckduckgo.com/search?q=site:" + site + "+" + q;
-    window.open(url, "_blank");
-  }
-</script>
 </html>

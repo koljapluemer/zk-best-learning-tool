@@ -29,29 +29,8 @@
         <h1 dir="auto">{{note.title}}</h1>
         {{{note.content}}}
     </main>
-    <footer>
-	    <form style="display:flex;gap:4px">
-			  <input type="text" id="q">
-			  <button type="Submit">Search (WIP)</button>
-		</form>
-    </footer>
-
 
 
     </main>
-    <footer>
-	    <form onsubmit="event.preventDefault(); go()" style="display:flex;gap:4px">
-			  <input id="q" type="text" autofocus />
-			  <button type="Submit">Search (WIP)</button>
-		</form>
-    </footer>
 </body>
-<script>
-  function go() {
-    const q = encodeURIComponent(document.getElementById("q").value);
-    const site = encodeURIComponent(location.hostname);
-    const url = "https://www.duckduckgo.com/search?q=site:" + site + "+" + q;
-    window.open(url, "_blank");
-  }
-</script>
 </html>

@@ -21,19 +21,5 @@
 <li dir="auto"><a class="internal-link" data-href="cybernetic-loop.html" href="cybernetic-loop.html" rel="nofollow">cybernetic loop</a></li>
 </ul>
     </main>
-    <footer>
-	    <form onsubmit="event.preventDefault(); go()" style="display:flex;gap:4px">
-			  <input id="q" type="text" autofocus />
-			  <button type="Submit">Search (WIP)</button>
-		</form>
-    </footer>
 </body>
-<script>
-  function go() {
-    const q = encodeURIComponent(document.getElementById("q").value);
-    const site = encodeURIComponent(location.hostname);
-    const url = "https://www.duckduckgo.com/search?q=site:" + site + "+" + q;
-    window.open(url, "_blank");
-  }
-</script>
 </html>
