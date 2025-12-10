@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 95%;">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZK | how to manage learning content for sbll﹖</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+</head>
+
+<body style="height:  95%;display:flex;flex-direction:column;">
+    <header>
+	    <nav  style="display:flex;gap:4px;justify-content:space-between;width:100%">
+	    <a href="/">⌂ Overview</a>
+	    <a href="https://koljasam.com/" target="_blank">by Kolja Sam</a>
+	    </nav>
+	    <hr />
+    </header>
+    <main style="flex:1">
+        <h1>how to manage learning content for sbll﹖</h1>
+        <h3 data-heading="report/eval 25-12-10" dir="auto">report/eval 25-12-10</h3>
+<ul>
+<li dir="auto">
+<p>pure python scripts is not so fun, because writing (/vibing) something every time you want new data is too big of a hurdle</p>
+</li>
+<li dir="auto">
+<p>inline (=in vue) editing is somewhat not fun because it feels so...ephemeral; would need real solid db with real solid backups and that would (to not be annoying) require quite a solid commitment on the data schema</p>
+<ul>
+<li dir="auto">...which of course points to the eternal <span class="dead-link" title="Broken link: how to represent language for SLA software﹖">how to represent language for SLA software﹖</span></li>
+</ul>
+</li>
+<li dir="auto">
+<p>Django feels too restrictive and brittle as soon as you start breaking out of <span class="dead-link" title="Broken link: HTTP">HTTP</span> states to do inline autocomplete and cute many-to-many forms</p>
+</li>
+<li dir="auto">
+<p>A local Flask app based on <span class="dead-link" title="Broken link: JSON">JSON</span>/<span class="dead-link" title="Broken link: JSONL">JSONL</span> (<code>glosses4learning-cms</code>) brought me pretty far, but if you want to factor it correctly, you're now suddenly trying to hamfist a lot into REST bodies and collect js/<span class="dead-link" title="Broken link: HTMX">HTMX</span> complexity</p>
+<ul>
+<li dir="auto">(tried a big refactor today and sort of got me nowhere)</li>
+</ul>
+</li>
+<li dir="auto">
+<p>A <span class="dead-link" title="Broken link: Jupyter notebook">Jupyter notebook</span> is just too tedious; I don't need to see my thousands of LoC inline, and I don't want to rerun a bunch of cells all the time or forget which one I already run</p>
+<ul>
+<li dir="auto">...but the mental model/paradigm kind of does remain close to what I truly want...a live representation of the tree, and then some sort of graph (half steps, half use-as-much-as-you-want tools) with the operations and checks I can run...</li>
+</ul>
+</li>
+<li dir="auto">
+<p><span class="dead-link" title="Broken link: tk">tk</span> as usual at first seems simple then disappoints; it's GUIs are just so unpleasant to use and even convincing it to render decently on my 4k screen is a big issue</p>
+</li>
+<li dir="auto">
+<p>kind of interested now in running pure CLI stuff, e.g. <span class="dead-link" title="Broken link: TUI">TUI</span> or specifically <code>python-prompt-toolkit</code>...forces me to keep the UI clean, after all, maybe why not...</p>
+<ul>
+<li dir="auto">if that works PoC level, may be worth to have the Flask app be a pure viewer, although maybe I can do that in the CLI to (refresh button won't kill me, and trees aren't that bad in CLI)
+<ul>
+<li dir="auto">...just scared of stuff like Arabic or symbol rendering...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+    </main>
+</body>
+</html>
