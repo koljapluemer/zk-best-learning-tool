@@ -1,0 +1,23 @@
+version = 1
+revision = 3
+requires-python = ">=3.12"
+
+[[package]]
+name = "pagefind"
+version = "1.4.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/2e/74/74ecc15aaeff30859c3e1164d6db796988602115d25a01a68851392ecfc6/pagefind-1.4.0.tar.gz", hash = "sha256:881dea03b367e0d80084e2eba0979b25981ab7400f094a8cdddc5381928d8438", size = 9454, upload-time = "2025-09-01T05:46:56.841Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/83/2c/474584536b91e3195ae11249c9384f09444770902db1186646234631bfba/pagefind-1.4.0-py3-none-any.whl", hash = "sha256:7256d40eee4fe3e9bef553a2e1d00c546975bdacc64c510f6ddda874b47da01d", size = 10074, upload-time = "2025-09-01T05:46:32.287Z" },
+]
+
+[[package]]
+name = "zk"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "pagefind" },
+]
+
+[package.metadata]
+requires-dist = [{ name = "pagefind", specifier = ">=1.4.0" }]
