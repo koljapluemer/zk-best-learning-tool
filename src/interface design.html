@@ -1,18 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 95%;">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>interface design</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+    <title>ZK | interface design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet">
 </head>
-<body>
-    <main>
+
+<body style="display:flex;flex-direction:column;">
+    <header>
+        <nav style="display:flex;gap:4px;justify-content:space-between;width:100%">
+            <a href="/">⌂ Overview</a>
+            <a href="https://koljasam.com/" target="_blank">by Kolja Sam</a>
+        </nav>
+
+        <hr />
+    </header>
+
+    <main style="flex:1">
         <h1>interface design</h1>
-        <ul>
+        <article>
+            <ul>
 <li><span class="broken-link">~ players missing signals will always happen</span></li>
 </ul>
-<p>←<a href="what are the differences between beginners and experts﹖.html">what are the differences between beginners and experts﹖</a> | <a href="Weber–Fechner law.html">Weber–Fechner law</a>→</p>
+        </article>
+
+        
+        <details class="backlinks">
+<summary>
+Backlinks (3)
+</summary><ul>
+<li><a href="Swimming Duck.html">Swimming Duck</a></li>
+<li><a href="Weber–Fechner law.html">Weber–Fechner law</a></li>
+<li><a href="how to make the world a better place by building really good tools for learning﹖.html">how to make the world a better place by building really good tools for learning﹖</a></li>
+</ul></details>
+        
     </main>
+    <footer>
+        <div id="search-container">
+            <div id="search"></div>
+        </div>
+    </footer>
 </body>
+<script src="/pagefind/pagefind-ui.js"></script>
+<script>
+    window.addEventListener('DOMContentLoaded', () => {
+        new PagefindUI({
+            element: "#search",
+            showSubResults: true,
+            showImages: false
+        });
+    });
+</script>
+
 </html>
